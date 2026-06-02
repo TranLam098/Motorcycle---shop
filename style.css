@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #f5f5f5;
+}
+.menu{
+    width: 100%;
+    background: black;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.menu img{
+    border-radius: 50%;
+}
+.menu ul li{
+    position: relative;
+    width: 150px;
+}
+.menu ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: black;
+    transition: 0.3s;
+}
+.menu ul li a:hover{
+    background: red;
+    transform: scale(1.05);
+}
+.menu ul li ul{
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    background: black;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 150px;
+    z-index: 999;
+}
+.menu ul li ul li{
+    width: 100%;
+}
+.menu ul li ul li a{
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.menu ul li:hover > ul{
+    display: block;
+}
+.Kieuxe{
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.Kieuxe div{
+    width: 220px;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.4s;
+    cursor: pointer;
+}
+.Kieuxe div:hover{
+    transform: translateY(-10px);
+    background: red;
+    color: white;
+}
+.Kieuxe img{
+    margin-bottom: 10px;
+}
+.Tieude{
+    text-align: center;
+    margin: 40px 0;
+}
+.Tieude h2{
+    font-size: 35px;
+    color: black;
+    position: relative;
+    display: inline-block;
+}
+.Tieude h2::after{
+    content: "";
+    width: 70%;
+    height: 4px;
+    background: red;
+    position: absolute;
+    left: 15%;
+    bottom: -10px;
+    border-radius: 10px;
+}
+.Thongtinsale,
+.Thongtinxedien,
+.Thongtintuc{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+.Thongtinsale div,
+.Thongtinxedien div,
+.Thongtintuc div{
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Thongtinsale div:hover,
+.Thongtinxedien div:hover,
+.Thongtintuc div:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.Thongtinsale img,
+.Thongtinxedien img,
+.Thongtintuc img{
+    transition: 0.5s;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.Thongtinsale div:hover img,
+.Thongtinxedien div:hover img,
+.Thongtintuc div:hover img{
+    transform: scale(1.1);
+}
+.Thongtinsale p,
+.Thongtinxedien p,
+.Thongtintuc p{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    background: black;
+    transform: scale(1.05);
+}
+.ket h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    color: red;
+}
+#Thongtintuc{
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+#Thongtintuc div{
+    width: 300px;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+#Thongtintuc div:hover{
+    transform: translateY(-10px);
+}
+#Thongtintuc img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#Thongtintuc p{
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+}
+.footer{
+    background-color: gray;
+}
+.content{
+    display:flex;
+
+    width: 1480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer{
+    margin-top: 20px;
+}
+.footer .content .logo{
+    width: 500px;
+}
+.footer .content .company{
+    width: 670px;
+}
+.footer .content .company h1{
+    margin-top: 40px;
+}
+.footer .content .company p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.footer .content .company .icon{
+    font-size: 32px;
+    margin-left: -5px;
+    margin-top: 13px;
+    display: flex;
+    gap:6px;
+}

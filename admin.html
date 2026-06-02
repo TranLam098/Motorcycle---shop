@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Admin</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background: #f5f5f5;
+        }
+        .admin-header{
+            width: 100%;
+            background: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .admin-header h1{
+            font-size: 35px;
+        }
+        .admin-container{
+            width: 95%;
+            margin: 40px auto;
+        }
+        .admin-card{
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            margin-bottom: 30px;
+        }
+        .admin-card h2{
+            margin-bottom: 20px;
+            color: red;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th{
+            background: black;
+            color: white;
+            padding: 15px;
+        }
+
+        table td{
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        button{
+            padding: 10px 15px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+            transition: 0.3s;
+        }
+        .edit{
+            background: orange;
+        }
+
+        .delete{
+            background: red;
+        }
+        button:hover{
+            transform: scale(1.05);
+        }
+        .form-group{
+            margin-bottom: 20px;
+        }
+
+        .form-group label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-group input{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .add-btn{
+            background: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="admin-header">
+        <h1>TRANG QUẢN TRỊ ADMIN</h1>
+    </div>
+    <div class="admin-container">
+        <div class="admin-card">
+            <h2>Danh sách xe</h2>
+            <table>
+                <tr>
+                    <th>Tên xe</th>
+                    <th>Loại</th>
+                    <th>Giá</th>
+                    <th>Chức năng</th>
+                </tr>
+                <tr>
+                    <td>VARIO 2025</td>
+                    <td>Xe ga</td>
+                    <td>40.735.637 VNĐ</td>
+                    <td>
+                        <button class="edit">Sửa</button>
+                        <button class="delete">Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EXCITER 155</td>
+                    <td>Tay côn</td>
+                    <td>51.500.000 VNĐ</td>
+                    <td>
+                        <button class="edit">Sửa</button>
+                        <button class="delete">Xóa</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>VISION 2025</td>
+                    <td>Xe ga</td>
+                    <td>36.612.000 VNĐ</td>
+                    <td>
+                        <button class="edit">Sửa</button>
+                        <button class="delete">Xóa</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="admin-card">
+            <h2>Thêm xe mới</h2>
+            <div class="form-group">
+                <label>Tên xe</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>Loại xe</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>Giá xe</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>Hình ảnh</label>
+                <input type="file">
+            </div>
+            <button class="add-btn">Thêm xe</button>
+        </div>
+    </div>
+</body>
+</html>
